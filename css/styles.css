@@ -3,3 +3,85 @@
 *::after {
     box-sizing: border-box;
 }
+
+/* 
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Playfair Display', serif; 
+*/
+
+body {
+    margin: 0;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.nav {
+    padding: 40px 0;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.nav__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__logo,
+a.nav__logo {
+    text-decoration: none;
+    font-size: 28px;
+    line-height: 38px;
+    color: #000;
+    transition: color 0.3s ease-out;
+}
+
+a.nav__logo:hover {
+    color: #f72464;
+}
+
+.nav__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.nav__item {
+    font-size: 18px;
+}
+.nav__item:not(:last-child) {
+    margin-right: 30px;
+}
+.nav__link {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s ease-out;
+}
+.nav__link:hover {
+    color: #f72464;
+}
+.nav__cart {
+}
+.nav__cart-link {
+    position: relative;
+    display: inline-block;
+    padding: 5px;
+    top: 5px;
+}
+
+.nav__cart-number {
+    position: absolute;
+    right: -5px;
+    top: -3px;
+    width: 20px;
+    height: 20px;
+    background: #f72464;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+}
