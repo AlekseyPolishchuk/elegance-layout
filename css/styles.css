@@ -14,27 +14,28 @@ body {
     font-family: "Noto Sans", sans-serif;
 }
 
-.nav {
-    padding: 40px 0;
-}
-
 .container {
     width: 1170px;
     margin: 0 auto;
 }
 
+.nav {
+    padding: 40px 0;
+}
+
 .nav__row {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
 }
+
 .nav__logo,
 a.nav__logo {
     text-decoration: none;
     font-size: 28px;
-    line-height: 38px;
     color: #000;
     transition: color 0.3s ease-out;
+    margin-right: 83px;
 }
 
 a.nav__logo:hover {
@@ -47,22 +48,29 @@ a.nav__logo:hover {
     padding: 0;
     list-style: none;
 }
+
 .nav__item {
     font-size: 18px;
 }
+
 .nav__item:not(:last-child) {
     margin-right: 30px;
 }
+
 .nav__link {
     text-decoration: none;
     color: #000;
     transition: color 0.3s ease-out;
 }
+
 .nav__link:hover {
     color: #f72464;
 }
+
 .nav__cart {
+    margin-left: auto;
 }
+
 .nav__cart-link {
     position: relative;
     display: inline-block;
@@ -84,4 +92,54 @@ a.nav__logo:hover {
     font-size: 12px;
     text-align: center;
     line-height: 20px;
+}
+
+.header__row {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__content {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 670px;
+}
+
+.header__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: "Playfair Display", serif;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 96px;
+}
+
+.header__text {
+    margin: 0;
+    margin-bottom: 60px;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.button {
+    display: inline-block;
+    font-family: "Playfair Display", serif;
+    font-size: 26px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    color: #fff;
+    background-color: #f72464;
+    box-shadow: 0px 4px 15px rgba(123, 12, 46, 0.35);
+    border-radius: 4px;
+    padding: 7px 33px 13px 33px;
+    transition: box-shadow 0.2s ease-in, background-color 0.2s ease-in;
+}
+
+.button:hover {
+    box-shadow: 0px 4px 25px rgba(184, 13, 64, 0.67);
+    background-color: #ff3874;
 }
