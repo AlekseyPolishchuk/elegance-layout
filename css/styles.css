@@ -144,7 +144,7 @@ a.nav__logo:hover {
     display: block;
 }
 
-.featured {
+.new {
     padding-top: 60px;
     padding-bottom: 70px;
 }
@@ -250,4 +250,42 @@ a.nav__logo:hover {
 .button-outline:hover {
     background-color: #f72464;
     color: #fff;
+}
+
+.info {
+    background-image: url("./../img/info/Rectangle 5.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.info::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 0%, 0.75);
+}
+
+.info-title {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 52px;
+    color: #ffffff;
+}
+
+.info__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+}
+
+.featured {
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
