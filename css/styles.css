@@ -3,18 +3,6 @@
 *::after {
     box-sizing: border-box;
 }
-/*! === скрыто === */
-nav,
-header,
-.new,
-.info,
-.featured,
-.blog,
-/* .subscribe, */
-footer {
-    display: none;
-}
-/*! === скрыто === */
 
 body {
     margin: 0;
@@ -424,11 +412,21 @@ a.nav__logo:hover {
     justify-content: center;
     row-gap: 40px;
     column-gap: 30px;
+
+    max-width: 570px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 1200px) {
+    .products-wrapper {
+        max-width: 100%;
+    }
 }
 
 .product {
     text-align: center;
-    max-width: 278px;
+    max-width: 270px;
 }
 
 .product-link {
@@ -442,7 +440,6 @@ a.nav__logo:hover {
 }
 
 .product__img {
-    display: block;
     margin-bottom: 12px;
 }
 .product__title {
@@ -685,15 +682,30 @@ a.nav__logo:hover {
 
 .subscribe-form {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+@media (min-width: 540px) {
+    .subscribe-form {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
 }
 
 .subscribe-form > * + * {
-    margin-left: 10px;
+    margin-top: 10px;
+}
+
+@media (min-width: 540px) {
+    .subscribe-form > * + * {
+        margin-top: 0;
+        margin-left: 10px;
+    }
 }
 
 .subscribe-form__input {
-    width: 230px;
     height: 42px;
     background: #ffffff;
     border: 1px solid #f72464;
@@ -705,6 +717,13 @@ a.nav__logo:hover {
     font-weight: 400;
     font-size: 16px;
     line-height: 1;
+    color: #000;
+}
+
+@media (min-width: 540px) {
+    .subscribe-form__input {
+        width: 230px;
+    }
 }
 
 .subscribe-form__button {
@@ -729,6 +748,12 @@ a.nav__logo:hover {
     background-color: #ff3874;
 }
 
+@media (min-width: 540px) {
+    .subscribe-form__button {
+        width: 230px;
+    }
+}
+
 .footer {
     padding: 30px 0;
     background-color: #000;
@@ -741,9 +766,20 @@ a.nav__logo:hover {
 }
 
 .footer__nav {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
     margin-bottom: 25px;
     font-size: 14px;
     text-transform: uppercase;
+}
+
+@media (min-width: 540px) {
+    .footer__nav {
+        font-display: row;
+        justify-content: center;
+    }
 }
 
 .footer__nav a {
@@ -757,7 +793,14 @@ a.nav__logo:hover {
 }
 
 .footer__nav > a + a {
-    margin-left: 30px;
+    margin-top: 20px;
+}
+
+@media (min-width: 540px) {
+    .footer__nav > a + a {
+        margin-top: 0;
+        margin-left: 30px;
+    }
 }
 
 .footer__socials {
