@@ -777,7 +777,7 @@ a.nav__logo:hover {
 
 @media (min-width: 540px) {
     .footer__nav {
-        font-display: row;
+        flex-direction: row;
         justify-content: center;
     }
 }
