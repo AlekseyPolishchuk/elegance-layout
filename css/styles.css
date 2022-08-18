@@ -170,6 +170,7 @@ a.nav__logo:hover {
 
 @media (min-width: 992px) {
     .nav__list-holder {
+        display: block;
         opacity: 1;
         position: static;
         background-color: transparent;
